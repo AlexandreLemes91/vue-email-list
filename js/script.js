@@ -16,6 +16,9 @@ const app = new Vue(
                         this.eMails.push(resp.data.response)
                         console.log(this.eMails);
                     })
+                    .catch(err =>{
+                        console.log("Error: ", err );
+                    })
             }
         }
         
