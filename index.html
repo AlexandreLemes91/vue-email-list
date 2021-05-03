@@ -17,7 +17,13 @@
             </li>
         </ul>
 
-        <h2 v-else>CARICAMENTO E-MAIL</h2>
+        <div v-else>
+            <h2>CARICAMENTO E-MAIL</h2>
+            <div class="loading-bar">
+                <div :style="{ width: eMails.length + '0%' }" class="charging" ></div>
+            </div>
+        </div>
+
     </div>
 
     <!-- Axios -->
